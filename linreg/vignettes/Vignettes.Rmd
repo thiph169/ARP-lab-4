@@ -1,0 +1,43 @@
+---
+title: "Vignette for linreg: Multiple Linear Regression"
+author: "Thi and Somaya"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+This vignette documents the content provided in a package named linreg.
+In thispackage You’ll learn how to work with multiple linear regression
+by creating a new object of class *linreg* and using methods such as 
+*print()*, *plot()* or *summary()*.
+
+
+# Creating an object of class linreg
+# Class linreg
+
+The key content in our package is the class linreg. 
+linreg() have two argument formula and data. the formula argument should take a formula object which can be created using the function model.matrix(). This function creates the matrix X (independent variables) and pick out the dependent variable using function all.vars(). 
+
+
+## Other useful methods of class linreg
+
+In addition to the basic statistic methods that **linreg** provides, there are available other three different methods: *print()*, *plot()* and *summary()*. These methods override the conventional functions with identical name when an object of class *linreg* is passed as an argument.
+
+
+# print() function
+
+print() function prints out the coefficients and coefficient names, similar as done by the *lm* class.
+
+
+# plot() function
+
+plot() function plots graphs using *ggplot2*.
+
+
+# summary() function
+
+summary() function returns a similar printout as printed for *lm* objects, but only with the coefficients with their standard error, t-value and p-value as well as the estimate of *sigma* and the degrees of freedom in the model.
+
