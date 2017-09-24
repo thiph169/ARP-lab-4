@@ -11,7 +11,7 @@
 #' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$pred()
 #' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$coef()
 #' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$summary()
-#' @return  linReg
+#' @return  linreg
 #' @export
 #'
 linreg <- setRefClass(
