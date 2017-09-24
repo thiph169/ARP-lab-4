@@ -3,7 +3,7 @@ Type: Package
 Title: linreg: Multiple Linear Regression
 Version: 1.0
 Date: 2017-09-21
-Authors: c(person("Somaya", "Khoda Bakhsh", email = "somkh364@student.liu.se", role = "cre"),person("Thi", "Pham", email = "thiph169@student.liu.se", role = "aut"))
+Authors@R: c(person("Somaya", "Khoda Bakhsh", email = "somkh364@student.liu.se", role = "cre"), person("Thi", "Pham", email = "thiph169@student.liu.se", role = "aut"))
 Maintainer: Thi <thiph169@student.liu.se>
 Description: Use linreg function to handle multiple linear regression.
 License: CC0
