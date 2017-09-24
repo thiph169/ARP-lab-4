@@ -1,5 +1,5 @@
 # ARP-lab-4
-[Build Status](ht# tps://travis-ci.org/thiph169/ARP-lab-4)
+[![Build Status](https://travis-ci.org/thiph169/ARP-lab-4.svg?branch=master)](https://travis-ci.org/thiph169/ARP-lab-4)
 
 ARP-lab-4
 
