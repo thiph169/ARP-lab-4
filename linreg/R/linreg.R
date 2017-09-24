@@ -1,22 +1,19 @@
-#' Linreg Function
-#' 
-#' @param formula, writen as a formula-object.
-#' @param data, a data.frame object in this particular case data (iris).
-#' @description This function store output from a Regression model in a linreg object.
-#' 
-#'  
-#' @return a linreg class object containing regression outputs.
-#' @export
-#' @examples
+#' LinearRegression
+#'
+#' @field formula formula. y ~ x_1 + x_2 + ... + x_n.
+#' @field data data.frame. 
+#' @description Returns the result of the Linear Regression
+#' @examples 
 #' data(iris)
 #' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$print()
-#' @author Thi Pham
-#' @details This function calculates ordrinary least square models (OLS)
-#' @import ggplot2
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$plot()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$resid()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$pred()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$coef()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$summary()
+#' @return  linReg
 #' @export
 #'
-
-
 linreg <- setRefClass(
   Class = "linreg",
   fields = list(

@@ -4,26 +4,28 @@
 \name{linreg-class}
 \alias{linreg-class}
 \alias{linreg}
-\title{Linreg Function}
-\arguments{
-\item{formula, }{writen as a formula-object.}
-
-\item{data, }{a data.frame object in this particular case data (iris).}
-}
+\title{LinearRegression}
 \value{
-a linreg class object containing regression outputs.
+linReg
 }
 \description{
-This function store output from a Regression model in a linreg object.
+Returns the result of the Linear Regression
 }
-\details{
-This function calculates ordrinary least square models (OLS)
-}
+\section{Fields}{
+
+\describe{
+\item{\code{formula}}{formula. y ~ x_1 + x_2 + ... + x_n.}
+
+\item{\code{data}}{data.frame.}
+}}
+
 
 \examples{
 data(iris)
 linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$print()
-}
-\author{
-Thi Pham
+linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$plot()
+linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$resid()
+linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$pred()
+linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$coef()
+linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$summary()
 }

@@ -8,7 +8,7 @@ Maintainer: Thi <thiph169@student.liu.se>
 Description: Use linreg function to handle multiple linear regression.
 License: CC0
 LazyData: true
-Depends: R (>= 2.10)
+Depends: R (>= 2.10), ggplot2
 RoxygenNote: 6.0.1
 Suggests: testthat,
     knitr,
