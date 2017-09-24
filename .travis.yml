@@ -1,7 +1,5 @@
 language: r
 cache: packages
- 
-install:
-  - Rscript -e 'devtools::install_deps("Package")'
-script:
-  - Rscript -e 'devtools::check("Package")'
+warnings_are_errors: false 
+before_install: 
+ - cd  linreg 
